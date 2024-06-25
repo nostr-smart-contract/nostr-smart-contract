@@ -1,19 +1,33 @@
 const bitcoin = require('bitcoinjs-lib');
+const bip32 = require('bip32');
+const bip39 = require('bip39');
 const ecc = require('tiny-secp256k1');
 const { generatePrivateKey, getPublicKey, connect, publish } = require('nostr-dev-kit');
 
 // Bitcoinjs-lib Integration
-function generateBitcoinAddress() {
-  const keyPair = bitcoin.ECPair.makeRandom();
-  const { address } = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey });
-  return address;
+async function generateBitcoinWallet() {
+  // Generate a new mnemonic and seed
+  const mnemonic = bip39.generateMnemonic();
+  const seed = await bip39.mnemonicToSeed(mnemonic);
+
+  // Create root node
+  const root = bip32.fromSeed(seed, bitcoin.networks.testnet);
+
+  // Generate a Bitcoin testnet address (Pay-to-Witness-PubKey-Hash)
+  const keyPair = root.derivePath("m/49'/1'/0'/0/0");
+  const { address } = bitcoin.payments.p2wpkh({
+    pubkey: keyPair.publicKey,
+    network: bitcoin.networks.testnet,
+  });
+
+  return { mnemonic, address };
 }
 
 // Nostr Integration
 function connectToNostr() {
   const privateKey = generatePrivateKey();
   const publicKey = getPublicKey(privateKey);
-  
+
   const relay = connect('wss://relay.damus.io');
   relay.on('open', () => {
     const message = {
@@ -23,7 +37,7 @@ function connectToNostr() {
       tags: [],
       content: 'Hello from Nostr and Bitcoin!',
     };
-  
+
     const signedMessage = publish(privateKey, message);
     relay.send(JSON.stringify(signedMessage));
   });
@@ -41,19 +55,21 @@ function createSmartContract() {
         Buffer.from('public_key_2', 'hex'),
       ],
     }),
+    network: bitcoin.networks.testnet,
   });
 
   return p2sh.address;
 }
 
 // Demo and PoC
-function demo() {
-  const bitcoinAddress = generateBitcoinAddress();
+async function demo() {
+  const { mnemonic, address: bitcoinAddress } = await generateBitcoinWallet();
   const nostrPublicKey = connectToNostr();
   const smartContractAddress = createSmartContract();
 
   document.getElementById('output').innerText = `
-    Bitcoin Address: ${bitcoinAddress}
+    Mnemonic: ${mnemonic}
+    Bitcoin Testnet Address: ${bitcoinAddress}
     Nostr Public Key: ${nostrPublicKey}
     Smart Contract Address: ${smartContractAddress}
   `;
