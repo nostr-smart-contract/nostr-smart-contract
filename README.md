@@ -4,6 +4,7 @@ Mini demo/PoC for smart contracts using Nostr over Bitcoin timechain
 
 ## Folder
 
+``
 bitcoin-smart-contracts/
 │
 ├── index.html
@@ -13,3 +14,4 @@ bitcoin-smart-contracts/
 └── .github/
     └── workflows/
         └── deploy.yml
+``
