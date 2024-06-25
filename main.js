@@ -17,7 +17,7 @@ async function generateBitcoinWallet() {
   const keyPair = root.derivePath("m/49'/1'/0'/0/0");
   const { address } = bitcoin.payments.p2wpkh({
     pubkey: keyPair.publicKey,
-    network: bitcoin.networks.testnet,
+    network: bitcoin.networks.signet,
   });
 
   return { mnemonic, address };
@@ -55,9 +55,9 @@ function createSmartContract() {
         Buffer.from('02c0ded5a4c85d1d0c4b2a2a2b1ddf202d49c41e1e6471c379f027eaa7d8c46b6a', 'hex'),
         Buffer.from('02d0e1b9e7b1a5a8d6f14d3f5c8a86a5d2d1e3b5d4c7d1e9e1d4b2c1d0a9e3f7c2', 'hex')
       ],
-      network: bitcoin.networks.testnet,
+      network: bitcoin.networks.signet,
     }),
-    network: bitcoin.networks.testnet,
+    network: bitcoin.networks.signet,
   });
 
   return p2sh.address;
