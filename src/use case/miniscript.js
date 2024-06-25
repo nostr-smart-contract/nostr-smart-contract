@@ -3,5 +3,5 @@ const { compile } = require('miniscript-compiler')
 
 const miniscript = new Miniscript()
 
-const if miniscript.compile('pk(0202020202020202020202020202020202020202020202020202020202020202)')
+const (miniscript).compile('pk(0202020202020202020202020202020202020202020202020202020202020202)')
 
