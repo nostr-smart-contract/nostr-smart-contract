@@ -8,7 +8,7 @@
     "start": "live-server"
   },
   "dependencies": {
-    "bitcoinjs-lib": "^6.1.5",
+    "bitcoinjs-lib": "^6.1.6",
     "bip32": "^3.0.1",
     "bip39": "^3.0.4",
     "nostr-dev-kit": "^2.9.1",
