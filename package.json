@@ -1,5 +1,5 @@
 {
-  "name": "bitcoin-smart-contracts",
+  "name": "nostr-smart-contract",
   "version": "1.0.0",
   "description": "Demo and PoC for mini smart contracts over Bitcoin using Bitcoinjs-lib and Nostr Dev Kit",
   "main": "main.js",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bitcoinjs-lib": "^6.1.6",
-    "bip32": "^3.0.1",
+    "bip32": "^2.0.0",
     "bip39": "^3.0.4",
     "nostr-dev-kit": "^2.9.1",
     "tiny-secp256k1": "^2.0.3"
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/bitcoin-smart-contracts.git"
+    "url": "git+https://github.com/nostr-smart-contract/nostr-smart-contract.git"
   },
-  "author": "Your Name",
-  "license": "ISC",
+  "author": "22388o",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/bitcoin-smart-contracts/issues"
+    "url": "https://github.com/nostr-smart-contract/nostr-smart-contracts/issues"
   },
-  "homepage": "https://github.com/yourusername/bitcoin-smart-contracts#readme"
+  "homepage": "https://github.com/nostr-smart-contract/nostr-smart-contracts#readme"
 }
