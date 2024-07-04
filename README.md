@@ -11,6 +11,12 @@ This is a simple PoC for smart contracts using Nostr over Bitcoin timechain.
 - Bitcoinjs-lib
 - NDK
 
+## Roadmap
+
+- [ ] Multisig
+- [ ] Musig2
+- [ ] NPM package
+
 ## License
 
 MIT
