@@ -3,5 +3,8 @@ const { Multisig } = require('./multisig');
 module.exports = {
   Multisig
 
-  // TODO: add other classes
 };
+
+const signingKey = '<signing_key>';
+const multisig = new Multisig(signingKey);
+const multisigAddress = multisig.getAddress();
