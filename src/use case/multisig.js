@@ -1,4 +1,5 @@
 const { Multisig } = require('./multisig');
+const { Wallet } = require('./wallet');
 
 module.exports = {
   Multisig
