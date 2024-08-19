@@ -5,3 +5,6 @@ export class Token extends NostrSmartContract {
   constructor(glaphy: Glaphy) {
     super(glaphy);
   }
+}
+
+export default Token;
