@@ -18,6 +18,7 @@ This is a simple PoC for smart contracts using Nostr over Bitcoin timechain.
 
 - Bitcoinjs-lib
 - NDK
+- Glyph protocol
 
 ## Roadmap
 
