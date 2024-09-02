@@ -27,4 +27,4 @@ This is a simple PoC for smart contracts using Nostr over Bitcoin timechain.
 - [ ] NPM package
 - [x] Opcodes                                        
 - [ ] Testnet4
-- [ ] Glyph protocol 
+- [x] Glyph protocol (WIP)
