@@ -9,6 +9,7 @@ bin-release/
 
 # Node modules 
 /node_modules 
+
 # Executables
 *.swf
 *.air
