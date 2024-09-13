@@ -8,14 +8,14 @@
     "start": "live-server"
   },
   "dependencies": {
-    "bitcoinjs-lib": "^6.1.6",
     "bip32": "^2.0.0",
     "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.1.6",
     "tiny-secp256k1": "^2.0.3"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0"
   },
   "repository": {
     "type": "git",
