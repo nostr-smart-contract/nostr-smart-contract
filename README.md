@@ -1,10 +1,6 @@
 # Nostr Smart Contract :coin: 🟣
 
-Mini demo/PoC for smart contracts using Nostr over Bitcoin timechain
-
-## About 
-
-This is a simple PoC for smart contracts using Nostr over Bitcoin timechain.
+Smart Contract Suite on Nostr using Bitcoin script and Lightning Network
 
 ## How to run
 
@@ -22,8 +18,8 @@ This is a simple PoC for smart contracts using Nostr over Bitcoin timechain.
 
 ## Roadmap
 
-- [ ] Multisig
-- [ ] Musig2
+- [x] Multisig
+- [x] Musig2
 - [ ] NPM package
 - [x] Opcodes                                        
 - [ ] Testnet4
