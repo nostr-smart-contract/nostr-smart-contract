@@ -22,5 +22,4 @@ Smart Contract Suite on Nostr using Bitcoin script and Lightning Network
 - [x] Musig2
 - [ ] NPM package
 - [x] Opcodes                                        
-- [ ] Testnet4
 - [x] Glyph protocol (WIP)
