@@ -12,7 +12,7 @@
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.1.6",
     "tiny-secp256k1": "^2.0.3",
-    "@nostr-dev-kit/ndk": "^2.10.0"
+    "@nostr-dev-kit/ndk": "^2.10.1"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
