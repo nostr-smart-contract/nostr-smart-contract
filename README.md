@@ -15,7 +15,6 @@ Smart Contract Suite on Nostr using Bitcoin script and Lightning Network
 - Bitcoinjs-lib
 - NDK
 - Lightningjs
-- ZK-SNARKs
 
 ## Roadmap
 
