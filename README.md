@@ -21,4 +21,4 @@ Smart Contract Suite on Nostr using Bitcoin script and Lightning Network
 - [x] Multisig
 - [x] Musig2
 - [x] Opcodes                                        
-- [ ] Lightning Network support
+- [ ] Lightning Network support (LND lite) 
