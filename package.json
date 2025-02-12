@@ -8,11 +8,13 @@
     "start": "live-server"
   },
   "dependencies": {
+    "@nostr-dev-kit/ndk": "^2.11.0",
     "bip32": "^2.0.0",
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.1.7",
-    "tiny-secp256k1": "^2.0.3",
-    "@nostr-dev-kit/ndk": "^2.11.0"
+    "goldengate": "^14.0.10",
+    "ln-service": "^57.23.0",
+    "tiny-secp256k1": "^2.0.3"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
