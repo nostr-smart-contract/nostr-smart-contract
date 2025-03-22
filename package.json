@@ -13,11 +13,11 @@
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.1.7",
     "goldengate": "^14.0.10",
-    "ln-service": "^57.23.0",
+    "ln-service": "^57.24.0",
     "tiny-secp256k1": "^2.0.3"
   },
   "devDependencies": {
-    "browserify": "^17.0.0",
+    "browserify": "^17.0.1",
     "live-server": "^1.2.0"
   },
   "repository": {
