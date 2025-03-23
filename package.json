@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@nostr-dev-kit/ndk": "^2.12.2",
-    "bip32": "^2.0.0",
+    "bip32": "^4.0.0",
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.1.7",
     "goldengate": "^14.0.10",
