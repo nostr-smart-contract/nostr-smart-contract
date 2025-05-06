@@ -16,9 +16,3 @@ Smart Contract Suite on Nostr using Bitcoin script and Lightning Network
 - NDK
 - Lightning library JS
   
-## Roadmap
-
-- [x] Multisig
-- [x] Musig2
-- [x] Opcodes                                        
-- [x] Lightning Network support (LND lite) 
