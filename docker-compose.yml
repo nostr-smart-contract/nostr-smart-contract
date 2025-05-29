@@ -1,0 +1,6 @@
+services:
+  nostrsmartcontract:
+    image: nostrsmartcontract
+    build:
+      context: .
+      dockerfile: ./Dockerfile
