@@ -14,7 +14,7 @@
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.1.7",
     "goldengate": "^14.0.10",
-    "ln-service": "^57.25.1",
+    "ln-service": "^57.25.2",
     "tiny-secp256k1": "^2.0.3"
   },
   "devDependencies": {
